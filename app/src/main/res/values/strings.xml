@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Bangkit-2024-BPAAI</string>
+
+    <!-- Advance Ui -->
+    <string name="like">Suka</string>
+    <string name="dislike">Tidak Suka</string>
+    <string name="appwidget_text">EXAMPLE</string>
+
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="random">Random: 100</string>
+    <string name="generate">Generate</string>
+
+    <string name="appwidget_text2">STAR WARS BANNER</string>
+    <string name="empty_text">NO DATA</string>
 </resources>

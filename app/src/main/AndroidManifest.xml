@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +15,7 @@
         android:theme="@style/Theme.Bangkit2024BPAAI"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".AdvanceUI.WebView.MainWebView"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +23,51 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".AdvanceUI.StackViewWidget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".AdvanceUI.StackViewWidget.ImagesBannerWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/image_banner_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".AdvanceUI.StackViewWidget.MainStackViewWidget"
+            android:exported="false" />
+
+        <receiver
+            android:name=".AdvanceUI.Widget.RandomNumberWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/random_number_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".AdvanceUI.Widget.MainWidget"
+            android:exported="false" />
+        <activity
+            android:name=".AdvanceUI.Canvas.MainCanvas"
+            android:exported="false" />
+        <activity
+            android:name=".AdvanceUI.CustomViewDariAwal.MainCustomViewDariAwal"
+            android:exported="false" />
+        <activity
+            android:name=".AdvanceUI.CustomView.MainCustomView"
+            android:exported="false" />
     </application>
 
 </manifest>
