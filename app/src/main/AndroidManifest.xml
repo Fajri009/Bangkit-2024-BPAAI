@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Bangkit2024BPAAI"
         tools:targetApi="31">
         <activity
-            android:name=".AdvanceUI.WebView.MainWebView"
+            android:name=".Animation.MotionLayout.MainMotionLayout"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +23,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Animation.ActivityAnimation.HeroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Animation.ActivityAnimation.MainActivityAnimation"
+            android:exported="false" />
+        <activity
+            android:name=".Animation.PropertyAnimation.view.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Animation.PropertyAnimation.view.signup.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Animation.PropertyAnimation.view.welcome.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Animation.PropertyAnimation.view.main.MainPropertyAnimation"
+            android:exported="false" />
+        <activity
+            android:name=".AdvanceUI.WebView.MainWebView"
+            android:exported="false" />
 
         <service
             android:name=".AdvanceUI.StackViewWidget.StackWidgetService"
