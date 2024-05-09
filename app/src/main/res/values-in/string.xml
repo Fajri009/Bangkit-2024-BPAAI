@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Localization & Accessibility -->
+    <string name="app_name">Bangkit-2024-BPAAI</string>
+
+    <string name="price_localization_text">Rp. 200.000,00</string>
+    <string name="name_localization_text">Sepatu Lari</string>
+    <string name="store_localization_text">Toko Dicoding</string>
+    <string name="date_localization_text">Diunggah 5 Agu 2021</string>
+    <string name="color_localization_text">Coklat</string>
+    <string name="rating_localization_text">4.5 (1.249)</string>
+    <string name="size_localization_text">42</string>
+    <string name="desc_localization_text">Sepatu lari kece edisi terbatas. Memakai sepatu ini akan meningkatkan pemahamanmu ketika belajar coding.\n\nBarang selalu ada. Tersedia berbagai ukuran dan warna. Silakan langsung order!</string>
+    <string name="buy_localization_text">Beli Sekarang!</string>
+
+    <string name="name_formatting">Sepatu Lari</string>
+    <string name="store_formatting">Toko Dicoding</string>
+    <string name="size_formatting">42</string>
+    <string name="color_formatting">Coklat</string>
+    <string name="desc_formatting">Sepatu lari kece edisi terbatas. Memakai sepatu ini akan meningkatkan pemahamanmu ketika belajar coding.\n\nBarang selalu ada. Tersedia berbagai ukuran dan warna. Silakan langsung order!</string>
+
+    <string name="price_formatting">200000.00</string>
+    <string name="rating_formatting">4.5</string>
+    <string name="date_formatting">5/8/2021</string>
+    <string name="countRating_formatting">1249</string>
+    <string name="dateFormat_formatting">Diunggah pada %1$s</string>
+    <string name="ratingFormat_formatting">%1$s (%2$s)</string>
+
+    <string name="settingDescription">Ganti Bahasa</string>
+    <string name="previewDescription">"Gambar Sepatu"</string>
+    <string name="storeDescription">Dari %1$s</string>
+    <string name="sizeDescription">Berukuran %1$s</string>
+    <string name="colorDescription">Berwarna %1$s</string>
+    <string name="ratingDescription">Memiliki peringkat %1$s dari %2$s</string>
+</resources>

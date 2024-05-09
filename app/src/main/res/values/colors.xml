@@ -30,4 +30,7 @@
     <!-- Animation -->
     <color name="navy">#2D3D4F</color>
     <color name="pink">#F06292</color>
+
+    <!-- Localization & Accessibility -->
+    <color name="gray">#222</color>
 </resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Localization & Accessibility -->
+    <string name="app_name">Bangkit-2024-BPAAI</string>
+
+    <string name="price_localization_text">Rp. 200.000,00</string>
+    <string name="name_localization_text">Sepatu Damel Playon</string>
+    <string name="store_localization_text">Warung Dicoding</string>
+    <string name="date_localization_text">Dipasang 5 Agustus 2021</string>
+    <string name="color_localization_text">Soklat</string>
+    <string name="rating_localization_text">4.5 (1.249)</string>
+    <string name="size_localization_text">42</string>
+    <string name="desc_localization_text">Sepatu damel playon edisi namung kedik. Yen ngagem sepatu niki saget ningkataken pemahaman panjenengan nalika sinau coding.\n\nBarang mesti wonten. Sepatu punika wonten ing katah ukuran lan warna. Monggo dipun pesen!</string>
+    <string name="buy_localization_text">Tumbasen Sak Niki!</string>
+
+    <string name="name_formatting">Sepatu Damel Playon</string>
+    <string name="store_formatting">Warung Dicoding</string>
+    <string name="size_formatting">42</string>
+    <string name="color_formatting">Soklat</string>
+    <string name="desc_formatting">Sepatu damel playon edisi namung kedik. Yen ngagem sepatu niki saget ningkataken pemahaman panjenengan nalika sinau coding.\n\nBarang mesti wonten. Sepatu punika wonten ing katah ukuran lan warna. Monggo dipun pesen!</string>
+
+    <string name="price_formatting">200000.00</string>
+    <string name="rating_formatting">4.5</string>
+    <string name="date_formatting">5/8/2021</string>
+    <string name="countRating_formatting">1249</string>
+    <string name="dateFormat_formatting">Dipasang %1$s</string>
+    <string name="ratingFormat_formatting">%1$s (%2$s)</string>
+
+    <string name="settingDescription">Ganti Boso</string>
+    <string name="previewDescription">"Gambar Sepatu"</string>
+    <string name="storeDescription">Seko %1$s</string>
+    <string name="sizeDescription">Ukuranipun  %1$s</string>
+    <string name="colorDescription">Warnanipun %1$s</string>
+    <string name="ratingDescription">Gadah peringkat %1$s saking %2$s</string>
+</resources>

@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Bangkit2024BPAAI"
         tools:targetApi="31">
         <activity
-            android:name=".Animation.MotionLayout.MainMotionLayout"
+            android:name=".LocalizationAndAccessibility.Accessibility.MainAccessibility"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +23,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LocalizationAndAccessibility.Formatting.MainFormatting"
+            android:exported="false" />
+        <activity
+            android:name=".LocalizationAndAccessibility.AdaptiveLayout.MainAdaptiveLayout"
+            android:exported="false" />
+        <activity
+            android:name=".LocalizationAndAccessibility.LocalizationTeks.MainLocalizationTeks"
+            android:exported="false" />
+        <activity
+            android:name=".Animation.MotionLayout.MainMotionLayout"
+            android:exported="false" />
         <activity
             android:name=".Animation.ActivityAnimation.HeroActivity"
             android:exported="false" />

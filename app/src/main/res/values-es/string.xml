@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Localization & Accessibility -->
+    <string name="app_name">Bangkit-2024-BPAAI</string>
+
+    <string name="price_localization_text">€ 12,38</string>
+    <string name="name_localization_text">Zapatos para correr</string>
+    <string name="store_localization_text">Tienda Dicoding</string>
+    <string name="date_localization_text">Subido el 5 de agosto de 2021</string>
+    <string name="color_localization_text">marrón</string>
+    <string name="rating_localization_text">4.5 (1.249)</string>
+    <string name="size_localization_text">42</string>
+    <string name="desc_localization_text">Zapatillas de running geniales de edición limitada. Usar estos zapatos mejorará su comprensión al aprender el código.\n\nEl artículo siempre está en stock. Hay varios tamaños y colores disponibles. ¡Ordenar ahora!</string>
+    <string name="buy_localization_text">¡Compra ahora!</string>
+
+    <string name="name_formatting">Zapatos para correr</string>
+    <string name="store_formatting">Tienda Dicoding</string>
+    <string name="size_formatting">42</string>
+    <string name="color_formatting">Marrón</string>
+    <string name="desc_formatting">Zapatillas de running geniales de edición limitada. Usar estos zapatos mejorará su comprensión al aprender el código.\n\nEl artículo siempre está en stock. Hay varios tamaños y colores disponibles. ¡Ordenar ahora!</string>
+
+    <string name="price_formatting">200000.00</string>
+    <string name="rating_formatting">4.5</string>
+    <string name="date_formatting">5/8/2021</string>
+    <string name="countRating_formatting">1249</string>
+    <string name="dateFormat_formatting">Subido el %1$s</string>
+    <string name="ratingFormat_formatting">%1$s (%2$s)</string>
+
+    <string name="settingDescription">Cambiar idioma</string>
+    <string name="previewDescription">"Imagen de zapatos"</string>
+    <string name="storeDescription">De %1$s</string>
+    <string name="sizeDescription">Talla  %1$s</string>
+    <string name="colorDescription">Coloreado %1$s</string>
+    <string name="ratingDescription">Tiene una calificación de %1$s de %2$s</string>
+</resources>
