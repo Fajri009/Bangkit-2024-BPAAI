@@ -113,4 +113,11 @@
     <string name="sizeDescription">The size is  %1$s</string>
     <string name="colorDescription">The color is %1$s</string>
     <string name="ratingDescription">Got a rating of %1$s from %2$s</string>
+
+    <string name="start_background_service" translatable="false">Start Background Service</string>
+    <string name="stop_background_service" translatable="false">Stop Background Service</string>
+    <string name="start_foreground_service" translatable="false">Start Foreground Service</string>
+    <string name="stop_foreground_service" translatable="false">Stop Foreground Service</string>
+    <string name="start_bound_service" translatable="false">Start Bound Service</string>
+    <string name="stop_bound_service" translatable="false">Stop Bound Service</string>
 </resources>
