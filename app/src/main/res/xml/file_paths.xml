@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Name digunakan untuk menambahkan segment baru setelah external file path pada Content Uri -->
+    <!-- path menandakan path mana yang diakses -->
+    <external-files-path name="my_images" path="Pictures" />
+</paths>

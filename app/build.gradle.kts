@@ -37,6 +37,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -64,4 +65,27 @@ dependencies {
     // Coroutine
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
+
+    // ExoPlayer
+    // media3-exoplayer: Digunakan sebagai fungsi utama (Core functionality) dan sifatnya wajib  ada (required)
+    implementation("androidx.media3:media3-exoplayer:1.1.0")
+    // media3-ui: Digunakan untuk menyediakan berbagai komponen UI dan resource yang bisa digunakan oleh ExoPlayer
+    implementation("androidx.media3:media3-ui:1.1.0")
+    // media3-session: Digunakan untuk membuat dan mengontrol media session
+    implementation("androidx.media3:media3-session:1.1.0")
+
+    // CameraX
+    val cameraxVersion = "1.2.3"
+    implementation("androidx.camera:camera-camera2:$cameraxVersion") // menampilkan kamera dalam aplikasi serta mengambil gambar
+    implementation("androidx.camera:camera-lifecycle:$cameraxVersion") // mengatur daur hidup atau lifecycle dari CameraX
+    implementation("androidx.camera:camera-view:$cameraxVersion") // sebagai View Camera
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1") // untuk lifecycleScope
+
+    // untuk membaca EXIF
+    implementation("androidx.exifinterface:exifinterface:1.3.6")
 }
