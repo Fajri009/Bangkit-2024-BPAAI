@@ -85,7 +85,7 @@ class SeatsView : View {
             textSize = 50F
         }
 
-        canvas?.drawText(text, (width / 2F) - 197F, 100F, titlePaint)
+        canvas.drawText(text, (width / 2F) - 197F, 100F, titlePaint)
     }
 
     private fun drawSeat(canvas: Canvas?, seat: Seat) {

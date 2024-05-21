@@ -9,11 +9,13 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28" />
-
-    <!-- Permission penggunaan akses kamera -->
+        android:maxSdkVersion="28" /> <!-- Permission penggunaan akses kamera -->
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- menggunakan background location yang memerlukan izin khusus pada Android 10 (Q) ke atas -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -25,7 +27,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bangkit2024BPAAI"
         tools:targetApi="31">
-        <!-- Karena kita menggunakan FileProvider pada versi di bawah Android Q untuk dapat mengakses File yang ada di storage, maka kita perlu mendaftarkan Content Provider -->
+        <receiver
+            android:name=".GeoLocation.Geofencing.receiver.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".GeoLocation.Geofencing.MainGeofencing"
+            android:exported="true"
+            android:label="@string/title_activity_main_geofencing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GeoLocation.LocationTracker.LocationTrackerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_location_tracker" />
+        <activity
+            android:name=".GeoLocation.GoogleMaps.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" /> <!-- Karena kita menggunakan FileProvider pada versi di bawah Android Q untuk dapat mengakses File yang ada di storage, maka kita perlu mendaftarkan Content Provider -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -33,19 +71,21 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"/>
-        </provider>
-
-        <!-- Trigger Google Play services to install the backported photo picker module. -->
-        <!--suppress AndroidDomInspection -->
-        <service android:name="com.google.android.gms.metadata.ModuleDependencies"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+        <!-- suppress AndroidDomInspection -->
+        <service
+            android:name="com.google.android.gms.metadata.ModuleDependencies"
             android:enabled="false"
             android:exported="false"
             tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
             </intent-filter>
-            <meta-data android:name="photopicker_activity:0:required" android:value="" />
+
+            <meta-data
+                android:name="photopicker_activity:0:required"
+                android:value="" />
         </service>
 
         <activity
@@ -53,13 +93,7 @@
             android:exported="false" />
         <activity
             android:name=".Media.GalleryDanKamera.MainGallery"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
 
         <service
             android:name=".Media.ExoPlayerNotification.service.PlaybackService"

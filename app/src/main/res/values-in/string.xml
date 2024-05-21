@@ -32,4 +32,6 @@
     <string name="sizeDescription">Berukuran %1$s</string>
     <string name="colorDescription">Berwarna %1$s</string>
     <string name="ratingDescription">Memiliki peringkat %1$s dari %2$s</string>
+
+
 </resources>
