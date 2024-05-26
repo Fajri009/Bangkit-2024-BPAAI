@@ -145,5 +145,14 @@
     <string name="start_running" translatable="false">Start Running</string>
     <string name="stop_running" translatable="false">Stop Running</string>
     <string name="start_point" translatable="false">Start Point</string>
-    <string name="title_activity_main_geofencing">MainGeofencing</string>
+    <string name="title_activity_main_geofencing" translatable="false">MainGeofencing</string>
+
+    <!-- Advance Testing -->
+    <string name="home" translatable="false">Home</string>
+    <string name="bookmark" translatable="false">Bookmark</string>
+    <string name="title" translatable="false">Title</string>
+    <string name="published_date" translatable="false">Published Date</string>
+    <string name="save_bookmark" translatable="false">Save Bookmark?</string>
+    <string name="no_data" translatable="false">Empty data</string>
+    <string name="something_wrong" translatable="false">Oops.. something went wrong.</string>
 </resources>

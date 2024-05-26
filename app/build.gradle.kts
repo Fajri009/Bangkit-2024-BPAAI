@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("kotlin-parcelize")
+    id("com.google.devtools.ksp")
     alias(libs.plugins.googleAndroidLibrariesMapsplatformSecretsGradlePlugin)
 }
 
@@ -17,6 +18,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "TESTING_API_KEY", "\"db874e166f4c473e9132d19a45135274\"")
     }
 
     buildTypes {
@@ -29,11 +32,16 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        isCoreLibraryDesugaringEnabled = true
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
+    }
+
+    testOptions {
+        animationsDisabled = true
     }
 
     buildFeatures {
@@ -50,6 +58,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.maps)
+    implementation(libs.androidx.junit.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -57,9 +66,13 @@ dependencies {
     // DataStore
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
+    // Ktx Android
+    implementation("androidx.core:core-ktx:1.0.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
     implementation("androidx.activity:activity-ktx:1.7.2")
+    implementation("androidx.fragment:fragment-ktx:1.7.1")
+    implementation("androidx.lifecycle:lifecycle-extensions:2.0.0")
 
     // Glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
@@ -97,4 +110,39 @@ dependencies {
 
     // Geofencing
     implementation("com.google.android.gms:play-services-location:21.0.1")
+
+    // Room
+    val roomVersion = "2.5.2"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
+
+    // Desugaring
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
+
+    // Mockito
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.inline)
+
+    //special testing
+    testImplementation(libs.androidx.core.testing) // InstantTaskExecutorRule
+    testImplementation(libs.kotlinx.coroutines.test) //TestCoroutineDispatcher
+
+    //special instrumentation testing
+    androidTestImplementation(libs.androidx.core.testing) // InstantTaskExecutorRule
+    androidTestImplementation(libs.kotlinx.coroutines.test) //TestDispatcher
+
+    //TestCoroutineDispatcher
+    debugImplementation(libs.androidx.fragment.testing) //launchFragmentInContainer
+
+    //mock web server (server tiruan)
+    androidTestImplementation(libs.mockwebserver)
+    androidTestImplementation(libs.okhttp3.okhttp.tls)
+
+    androidTestImplementation(libs.androidx.espresso.contrib) //RecyclerViewActions
+
+    // Idling Resource
+    implementation(libs.androidx.espresso.idling.resource)
+
+    androidTestImplementation(libs.espresso.intents) //IntentsTestRule
 }

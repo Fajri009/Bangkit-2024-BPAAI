@@ -33,4 +33,7 @@
 
     <!-- Localization & Accessibility -->
     <color name="gray">#222</color>
+
+    <!-- Advance Testing -->
+    <color name="placeholder">#6FB6B6B6</color>
 </resources>

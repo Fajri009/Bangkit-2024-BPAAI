@@ -3,4 +3,7 @@ plugins {
     alias(libs.plugins.androidApplication) apply false
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
     alias(libs.plugins.googleAndroidLibrariesMapsplatformSecretsGradlePlugin) apply false
+    id ("com.android.library") version "8.2.0" apply false
+    id("com.google.devtools.ksp") version "1.9.0-1.0.11" apply false
+    id ("org.jetbrains.kotlinx.kover") version "0.5.0"  // untuk memeriksa berapa persen jumlah kode yang sudah ada testingnya
 }
