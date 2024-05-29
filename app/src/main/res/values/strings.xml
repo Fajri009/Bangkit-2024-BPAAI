@@ -8,7 +8,7 @@
 
     <string name="add_widget" translatable="false">Add widget</string>
     <string name="app_widget_description" translatable="false">This is an app widget description</string>
-    <string name="random" translatable="false">Random: 100</string>
+    <!--    <string name="random" translatable="false">Random: 100</string>-->
     <string name="generate" translatable="false">Generate</string>
 
     <string name="appwidget_text2" translatable="false">STAR WARS BANNER</string>
@@ -155,4 +155,18 @@
     <string name="save_bookmark" translatable="false">Save Bookmark?</string>
     <string name="no_data" translatable="false">Empty data</string>
     <string name="something_wrong" translatable="false">Oops.. something went wrong.</string>
+
+    <!-- Advanced Database -->
+    <string name="single_table" translatable="false">Single Table</string>
+    <string name="many_to_one" translatable="false">Many to One</string>
+    <string name="one_to_many" translatable="false">One to Many</string>
+    <string name="many_to_many" translatable="false">Many to Many</string>
+    <string name="many_to_many_university" translatable="false">Many to Many with University</string>
+
+    <string name="sort" translatable="false">Sort</string>
+    <string name="ascending" translatable="false">A-Z</string>
+    <string name="descending" translatable="false">Z-A</string>
+    <string name="random" translatable="false">Random</string>
+
+    <string name="retry" translatable="false">Coba lagi</string>
 </resources>

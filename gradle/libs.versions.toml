@@ -20,8 +20,11 @@ mockwebserver = "4.9.3"
 okhttpTls = "4.9.3"
 espressoContribVersion = "3.5.1"
 espressoIdlingResource = "3.5.1"
-espressoIntents = "3.4.0"
+espressoIntents = "3.5.1"
 junitKtx = "1.1.5"
+lifecycleLivedataKtx = "2.8.0"
+pagingRuntimeKtx = "3.3.0"
+roomPaging = "2.4.0-rc01"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -44,6 +47,9 @@ androidx-espresso-contrib = { group = "androidx.test.espresso", name = "espresso
 androidx-espresso-idling-resource = { module = "androidx.test.espresso:espresso-idling-resource", version.ref = "espressoIdlingResource" }
 espresso-intents = { module = "androidx.test.espresso:espresso-intents", version.ref = "espressoIntents" }
 androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
+lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-paging-runtime-ktx = { module = "androidx.paging:paging-runtime-ktx", version.ref = "pagingRuntimeKtx" }
+androidx-room-paging = { module = "androidx.room:room-paging", version.ref = "roomPaging" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

@@ -5,10 +5,10 @@
       <entry key="HomeActivityTest">
         <State />
       </entry>
-      <entry key="NewsDaoTest">
+      <entry key="NewsFragmentTest">
         <State />
       </entry>
-      <entry key="NewsFragmentTest">
+      <entry key="QuoteRemoteMediatorTest">
         <State />
       </entry>
       <entry key="app">
@@ -26,6 +26,9 @@
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-05-14T04:09:54.734959900Z" />
         </State>
+      </entry>
+      <entry key="refreshLoadReturnsSuccessResultWhenMoreDataIsPresent()">
+        <State />
       </entry>
     </value>
   </component>

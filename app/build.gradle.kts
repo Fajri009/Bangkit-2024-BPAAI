@@ -19,6 +19,10 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
+        ksp {
+            arg("room.schemaLocation", "$projectDir/schemas")
+        }
+
         buildConfigField("String", "TESTING_API_KEY", "\"db874e166f4c473e9132d19a45135274\"")
     }
 
@@ -42,6 +46,7 @@ android {
 
     testOptions {
         animationsDisabled = true
+        unitTests.isReturnDefaultValues = true
     }
 
     buildFeatures {
@@ -145,4 +150,13 @@ dependencies {
     implementation(libs.androidx.espresso.idling.resource)
 
     androidTestImplementation(libs.espresso.intents) //IntentsTestRule
+
+    // KTX pada Transformation LiveData
+    implementation(libs.lifecycle.livedata.ktx)
+
+    // Pagging
+    implementation(libs.androidx.paging.runtime.ktx)
+
+    // Room yang mendukung Paging
+    implementation(libs.androidx.room.paging)
 }
