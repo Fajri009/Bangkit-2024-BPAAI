@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "12781587614",
+    "firebase_url": "https://bangkit-2024-bpaai-e5173-default-rtdb.firebaseio.com",
+    "project_id": "bangkit-2024-bpaai-e5173",
+    "storage_bucket": "bangkit-2024-bpaai-e5173.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12781587614:android:b0953343ebde6046623f8f",
+        "android_client_info": {
+          "package_name": "com.example.bangkit_2024_bpaai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12781587614-cd3dcvbnjgdi79mss66jmsun96pqugvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bangkit_2024_bpaai",
+            "certificate_hash": "fe5a07fe8838ded5681d7c3cfcb28e5fc7a03f4e"
+          }
+        },
+        {
+          "client_id": "12781587614-vqi17032v2ui8rdl9s6j6tc80u4bc8kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuHhqRBWqJkhKzfEU5AxgHoSAyV8RONbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12781587614-vqi17032v2ui8rdl9s6j6tc80u4bc8kl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

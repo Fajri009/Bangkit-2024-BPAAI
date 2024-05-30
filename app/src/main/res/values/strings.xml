@@ -169,4 +169,11 @@
     <string name="random" translatable="false">Random</string>
 
     <string name="retry" translatable="false">Coba lagi</string>
+
+    <!-- Firebase -->
+    <string name="sign_out" translatable="false">Sign Out</string>
+    <string name="your_web_client_id" translatable="false">12781587614-vqi17032v2ui8rdl9s6j6tc80u4bc8kl.apps.googleusercontent.com</string>
+
+    <string name="send_success" translatable="false">Berhasil terkirim</string>
+    <string name="send_error" translatable="false">Gagal terkirim</string>
 </resources>

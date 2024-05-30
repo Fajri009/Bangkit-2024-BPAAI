@@ -29,9 +29,12 @@
         android:theme="@style/Theme.Bangkit2024BPAAI"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <!-- Firebase -->
         <activity
-            android:name=".AdvancedDatabase.Paging3.ui.MainPaging3"
+            android:name=".Firebase.LoginFirebaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Firebase.MainFirebase"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +42,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".Firebase.service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- Advanced Database -->
+        <activity
+            android:name=".AdvancedDatabase.Paging3.ui.MainPaging3"
+            android:exported="false" />
         <activity
             android:name=".AdvancedDatabase.StudentUniversity.MainAdvancedDatabase"
             android:exported="false" />
@@ -126,13 +141,7 @@
 
         <activity
             android:name=".Media.ExoPlayerNotification.MainExoPlayerNotification"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Media.ExoPlayer.MainExoPlayer"
             android:exported="false" />

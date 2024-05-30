@@ -4,6 +4,7 @@ plugins {
     id("kotlin-parcelize")
     id("com.google.devtools.ksp")
     alias(libs.plugins.googleAndroidLibrariesMapsplatformSecretsGradlePlugin)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -64,6 +65,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.maps)
     implementation(libs.androidx.junit.ktx)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.messaging)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -159,4 +162,19 @@ dependencies {
 
     // Room yang mendukung Paging
     implementation(libs.androidx.room.paging)
+
+    // Firebase
+    implementation(libs.firebase.auth) // Auth
+    implementation(libs.play.services.auth) // Google Auth
+
+    // Credential Manager
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
+    implementation(libs.googleid)
+
+    // Firebase UI
+    implementation(libs.firebase.ui.database)
+
+    // Glide
+    implementation(libs.glide)
 }
